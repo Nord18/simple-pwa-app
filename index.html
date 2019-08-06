@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./dist/assets/favicon.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="./dist/main.css">
+    <title>PWA blog</title>
+    <meta name="theme-color" content="#ffffff"/>
+</head>
+
+<body>
+    <div id="app">
+
+        <ul class="sidenav" id="mobile-demo">
+            <h3 class="center">Add new post</h3>
+            <div class="row">
+                <form id="form" class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="title" type="text" class="validate" required>
+                            <label for="title">Title</label>
+                            <span class="helper-text" data-error="title is required"></span>
+                        </div>
+                        <div class="input-field col s12">
+                            <textarea id="dscr" type="text" class="validate materialize-textarea" required></textarea>
+                            <label for="dscr">Description</label>
+                            <span class="helper-text" data-error="Description is required"></span>
+                        </div>
+                    </div>
+                    <button class="btn waves-effect waves-light blue-grey darken-2" type="submit" name="action">Add</button>
+                </form>
+            </div>
+        </ul>
+
+        <nav class="blue-grey darken-2 nav">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">PWA blog</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div id="wrapper" class="row">
+            </div>
+        </div>
+        
+        <div class="fixed-action-btn">
+            <a data-target="mobile-demo" class="btn-floating btn-large waves-effect waves-light blue-grey darken-2 sidenav-trigger"><i class="material-icons">add</i></a>
+        </div>
+
+    </div>
+    <script src="./dist/build.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+@import '~materialize-css/sass/materialize.scss';
+
+.input-field input:focus + label {
+    color:#455a64 !important;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #455a64 !important;
+    box-shadow: 0 1px 0 0 #455a64 !important;
+}
+
+.nav {
+    margin-bottom: 30px;
+}
+
+.delete {
+    color: #333;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    &:hover {
+        color: red;
+    }
+}
+
+.edit {
+    color: #333;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.post {
+    position: relative;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.hide {
+    display: none;
+}

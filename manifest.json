@@ -1,0 +1,21 @@
+{
+    "short_name": "PWA blog",
+    "name": "PWA blog",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#455a64",
+    "theme_color": "#ffffff",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+          "src": "/dist/assets/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        },
+        {
+          "src": "/dist/assets/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ]
+}
